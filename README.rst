@@ -9,7 +9,7 @@ Base-implementation
 
 In some instances you end up producing tons of views that actually do mostly
 the same except for perhaps one or two lines. This module offers you a simple
-alternative:
+alternative::
     
     from django_oopviews.base import create_view, BaseView
     

@@ -36,7 +36,7 @@ content-type, but if you set a value to a tuple instead of just a string, it
 will take the first element of that tuple as a priority value similar to the
 one used in the "Accept"-handling. This way, you can prioritize methods for 
 the case, that the user requests any type of a given family like for instance
-'text/*'.
+'text/\*'.
 """
 
 from django.http import HttpResponse
