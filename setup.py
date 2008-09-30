@@ -8,6 +8,9 @@ setup(
         packages=['django_oopviews'],
         url="http://github.com/zerok/django-oopviews/",
         version=django_oopviews.get_version(),
+        description="django-oopviews provides a simple way to write Django-views in an object-oriented manner.",
+        license="BSD",
+        platforms=['any'],
         classifiers=[
             'Development Status :: 4 - Beta',
             'Environment :: Web Environment',
