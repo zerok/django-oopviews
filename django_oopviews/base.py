@@ -6,15 +6,15 @@ alternative::
     from django_oopviews import create_view, BaseView
     
     class View1(BaseView):
-        def __init__(self, request, \*args, \*\*kwargs):
+        def __init__(self, request, *args, **kwargs):
             # Here you have your common code
             self.my_variable = 1
-        def __call__(self, request, \*args, \*\*kwargs):
+        def __call__(self, request, *args, **kwargs):
             whatever = self.my_variable + 1
             return HttpResponse(whatever)
     
     class View2(View1):
-        def __call__(self, request, \*args, \*\*kwargs):
+        def __call__(self, request, *args, **kwargs):
             return HttpResponse(self.my_variable)
 
     view1 = create_view(View1)
