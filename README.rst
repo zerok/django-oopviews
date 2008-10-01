@@ -1,6 +1,6 @@
-===============
+###############
 django-oopviews
-===============
+###############
 
 .. contents::
 
@@ -79,3 +79,16 @@ will take the first element of that tuple as a priority value similar to the
 one used in the "Accept"-handling. This way, you can prioritize methods for 
 the case, that the user requests any type of a given family like for instance
 'text/\*'.
+
+History
+========
+
+0.2 (Oct 1 2008)
+    comes as its own library using setuptools and offering with the 
+    django_oopviews.ctn module a simple implementation of content negotiation
+    in HTTP using OOPViews.
+    
+0.1 (inofficial)
+    This version only included the BaseView as well as the create_view 
+    function and was bundled with the django-zsutils library.
+    
