@@ -1,11 +1,13 @@
-from distutils.core import setup
+from ez_setup import use_setuptools
+use_setuptools()
+from setuptools import setup, find_packages
 import django_oopviews
 
 setup(
         name="django-oopviews",
         author="Horst Gutmann",
         author_email="zerok@zerokspot.com",
-        packages=['django_oopviews'],
+        packages=find_packages(),
         url="http://github.com/zerok/django-oopviews/",
         version=django_oopviews.get_version(),
         description="django-oopviews provides a simple way to write Django-views in an object-oriented manner.",
