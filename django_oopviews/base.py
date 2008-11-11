@@ -52,6 +52,7 @@ def create_view(klass):
             return response
         else:
             return view_instance.__after__(response)
+    setattr(_func, '_class', klass)
     return _func
 
 class BaseView(object):
